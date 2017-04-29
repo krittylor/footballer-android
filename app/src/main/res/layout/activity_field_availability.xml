@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.admin.footballer.FieldDetailPlayerActivity"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Light"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="800">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:text="Select Date and Time"
+            />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="250"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:text="@string/not_available_excuse"
+            android:background="#ffffff"
+            android:inputType="textMultiLine" />
+
+        <com.example.admin.footballer.SwipeSelector.DateTimePickerRed
+            android:id="@+id/date_time_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="350"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"/>
+        <Button
+            android:id="@+id/field_availability_button"
+            android:layout_width="130dp"
+            android:layout_height="0dp"
+            android:layout_weight="90"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Next"
+            android:theme="@style/Football.Button" />
+    </LinearLayout>
+</LinearLayout>

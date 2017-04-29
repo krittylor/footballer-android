@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/join_community_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <ProgressBar
+            style="@android:style/Widget.Material.Light.ProgressBar.Horizontal"
+            android:layout_width="@dimen/progress_width"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:id="@+id/progressBar5"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:progressTint="@color/colorPrimary" />
+
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

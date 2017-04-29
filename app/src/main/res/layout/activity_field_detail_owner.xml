@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.admin.footballer.FieldDetailPlayerActivity"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Light"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="800">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="300">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:auto_cycle="false"
+                app:indicator_visibility="invisible"
+                app:pager_animation="Default"
+                app:pager_animation_span="1100" />
+
+            <Button
+                android:id="@+id/leftArrowButton"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/leftarrow" />
+
+            <Button
+                android:id="@+id/rightArrowButton"
+                android:layout_width="20dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rightarrow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:layout_marginTop="20dp"
+            android:weightSum="400">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="100"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/field_location_name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="240"
+                android:gravity="left|center_vertical"
+                android:text="Jeddah" />
+
+            <Button
+                android:id="@+id/view_map_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.8"
+                android:padding="8dp"
+                android:text="See Location"
+                android:theme="@style/Football.Button" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/price_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="70"
+            android:gravity="center"
+            android:text="Price: 120 SAR" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"/>
+        <Button
+            android:id="@+id/field_edit_button"
+            android:layout_width="130dp"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Edit"
+            android:theme="@style/Football.Button" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"/>
+        <Button
+            android:id="@+id/field_schedule_button"
+            android:layout_width="130dp"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:text="Schedule"
+            android:theme="@style/Football.Button" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"/>
+        <Button
+            android:id="@+id/field_availability_button"
+            android:layout_width="130dp"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:text="Availability"
+            android:theme="@style/Football.Button" />
+    </LinearLayout>
+</LinearLayout>

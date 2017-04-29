@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.admin.footballer.ProfileEditActivity"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:theme="@style/ThemeOverlay.AppCompat.Light"
+            />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_edit_margin_left_right"
+            android:layout_marginRight="@dimen/profile_edit_margin_left_right"
+            android:layout_marginTop="40dp"
+            android:paddingTop="20dp"
+            android:background="@drawable/border_label"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edit_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:hint="Enter name"
+                android:inputType="text"
+                android:text="" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="@dimen/profile_edit_margin_left_right"
+            android:layout_marginRight="@dimen/profile_edit_margin_left_right"
+            android:text="Leave empty not to change password"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_edit_margin_left_right"
+            android:layout_marginRight="@dimen/profile_edit_margin_left_right"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_label"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/profile_edit_padding_left_right"
+            android:paddingRight="@dimen/profile_edit_padding_left_right"
+            android:paddingTop="20dp">
+
+            <EditText
+                android:id="@+id/edit_new_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter New Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/edit_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Re-Enter New Password"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_edit_margin_left_right"
+            android:layout_marginRight="@dimen/profile_edit_margin_left_right"
+            android:layout_marginTop="40dp"
+            android:paddingTop="20dp"
+            android:background="@drawable/border_label"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edit_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:hint="Enter Birthday"
+                android:inputType="text"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/profile_edit_margin_left_right"
+            android:layout_marginRight="@dimen/profile_edit_margin_left_right"
+            android:layout_marginTop="40dp"
+            android:paddingTop="20dp"
+            android:background="@drawable/border_label"
+            android:gravity="bottom">
+
+            <EditText
+                android:id="@+id/edit_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:ems="10"
+                android:hint="Enter Phone Number"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

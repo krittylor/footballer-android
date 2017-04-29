@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.admin.footballer.ProfileActivity"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/aboutus">
+        <ImageView
+            android:id="@+id/image_footballer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/footballer"
+            />
+
+        <EditText
+            android:id="@+id/aboutus_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_below="@id/image_footballer"
+            android:layout_marginTop="29dp"
+            android:ems="10"
+            android:inputType="none"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:text="About us"
+            android:textSize="25dp"
+            />
+
+        <EditText
+            android:id="@+id/aboutus_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:ems="10"
+            android:inputType="none"
+            android:text="@string/about_us"
+            android:layout_below="@id/aboutus_title"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="80dp"
+            android:textColor="@android:color/black"
+            android:background="@android:color/white"
+
+            />
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:theme="@style/Football.Button"
+            android:text="Back"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

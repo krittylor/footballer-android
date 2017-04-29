@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "505146657325",
+    "firebase_url": "https://footballer-5aa7c.firebaseio.com",
+    "project_id": "footballer-5aa7c",
+    "storage_bucket": "footballer-5aa7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505146657325:android:076c12e7d1e2074e",
+        "android_client_info": {
+          "package_name": "com.example.admin.footballer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505146657325-bv729cublgqgge5a9vdmu5v55am11trl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1SUt2pcHB3JFurx7dPKovN49ToVnOb4Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
