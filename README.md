@@ -6,9 +6,9 @@ Created custom datetime picker.
 
 # Project scope 
 Fields Owners:
-  • Users will be able to register over the apps as fields owners. To register over the apps, they need to provide their basic personal details such as Name, e-mail and Password.
-  • Once register they will be able to login over the apps by providing e-mail and password.
-  • Field owners will be able to add their personal details such as birthday date and number over the profile page and can also edit them. They can also change the password and user name over the app.
+  • Users will be able to register over the apps as fields owners. To register over the apps, they need to provide their basic personal details such as Name, e-mail and Password.  
+  • Once register they will be able to login over the apps by providing e-mail and password.  
+  • Field owners will be able to add their personal details such as birthday date and number over the profile page and can also edit them. They can also change the password and user name over the app.  
   • They will also be able to update their profile picture by uploading picture from gallery or by clicking through device camera.
   • Fields owners will be able to view their fields and fields details over the home page.
   • From home screen they will be able to add their fields and their details by simply clicking over the add field button. They will be able to add Name, City, Location, price and photos for fields. When they click over the save the field will be shown over the home page.
