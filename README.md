@@ -4,7 +4,7 @@ Firebase realtime database and storage used.
 
 Created custom datetime picker.
 
-#Project scope 
+# Project scope 
 Fields Owners:
   • Users will be able to register over the apps as fields owners. To register over the apps, they need to provide their basic personal details such as Name, e-mail and Password.
   • Once register they will be able to login over the apps by providing e-mail and password.
