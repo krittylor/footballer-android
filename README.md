@@ -5,7 +5,7 @@ Firebase realtime database and storage used.
 Created custom datetime picker.
 
 # Project scope 
-Fields Owners:  
+1. Fields Owners:  
   • Users will be able to register over the apps as fields owners. To register over the apps, they need to provide their basic personal details such as Name, e-mail and Password.  
   • Once register they will be able to login over the apps by providing e-mail and password.  
   • Field owners will be able to add their personal details such as birthday date and number over the profile page and can also edit them. They can also change the password and user name over the app.  
@@ -17,7 +17,7 @@ Fields Owners:
   • Field owners will also be able to manage availability for the fields and marked dates which are manually booked or can also reserve them for fields maintenance.  
   • Fields owners can also view booking schedule for the fields which will be booked by players. Owners will be able to view reservation details such as customer name and order ID.  
   • Fields owners will also be able to logout.  
-Players:  
+2. Players:  
   • Users will be able to register over the apps as players. To register over the apps, they need to provide their basic personal details such as Name, e-mail and Password.  
   • Once register they will be able to login over the apps by providing e-mail and password.  
   • Players will be able to add their personal details such as birthday date and number over the profile page and can also edit them. They can also change the password and user name over the app.  
